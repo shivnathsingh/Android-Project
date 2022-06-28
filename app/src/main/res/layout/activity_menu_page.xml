@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Page">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Menu_Page">
+
+
+    <Button
+        android:id="@+id/lth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low to high"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/htl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high to low "
+        app:layout_constraintBottom_toTopOf="@+id/recycler_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+
+    <Button
+        android:id="@+id/range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pocket filter"
+
+        app:layout_constraintBottom_toTopOf="@+id/recycler_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lth"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="116dp"
+        android:hint="Min"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/range"
+        app:layout_constraintTop_toBottomOf="@+id/htl"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Max"
+
+        app:layout_constraintBottom_toTopOf="@+id/recycler_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/htl"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="502dp"
+        android:layout_height="587dp"
+        android:layout_marginTop="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_menu"
+        app:layout_constraintVertical_bias="0.178">
+
+
+        <Button
+            android:id="@+id/cart"
+            android:layout_width="172dp"
+            android:layout_height="72dp"
+
+
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="-2dp"
+            android:text="Go To Cart"
+            android:textColor="#F8F2F2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="172dp"
+            android:layout_height="72dp"
+
+            android:layout_marginLeft="40dp"
+            android:text="Order"
+            android:textColor="#F6F0F0"
+            android:textSize="24sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

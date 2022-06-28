@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_name"
+        app:srcCompat="@drawable/cat1" />
+
+    <TextView
+        android:id="@+id/menu_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_image" />
+
+    <TextView
+        android:id="@+id/menu_price"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_description" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_price">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="78dp"
+            android:layout_height="67dp"
+
+            android:text="+"
+            android:textColor="#FAF6F6"
+            android:textSize="34sp"
+
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/quantView"
+            android:layout_width="71dp"
+            android:layout_height="57dp"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="-5dp"
+
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="72dp"
+            android:layout_height="67dp"
+
+            android:layout_marginLeft="22sp"
+            android:text="-"
+            android:textColor="#F4EFEF"
+            android:textSize="36sp"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
